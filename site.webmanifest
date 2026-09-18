@@ -9,9 +9,9 @@
   "theme_color": "#070706",
   "icons": [
     {
-      "src": "/overcoming-average/assets/icons/favicon.svg",
-      "type": "image/svg+xml",
-      "sizes": "any",
+      "src": "/overcoming-average/assets/icons/favicon-32.png",
+      "type": "image/png",
+      "sizes": "32x32",
       "purpose": "any"
     },
     {

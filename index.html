@@ -26,7 +26,6 @@
   <meta name="twitter:description" content="Overcoming Average - Chad Keith's podcast and personal brand. Stories from people who refuse to stay stuck on average.">
   <meta name="twitter:image" content="https://chadakeith.github.io/overcoming-average/assets/img/og-card.jpg">
   <meta name="twitter:image:alt" content="Overcoming Average, a podcast from Chad Keith">
-  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="assets/icons/favicon-32.png" type="image/png" sizes="32x32">
   <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png" sizes="180x180">
   <link rel="manifest" href="site.webmanifest">
@@ -52,7 +51,13 @@
         "url": "https://chadakeith.github.io/overcoming-average/",
         "description": "Stories from people who refuse to stay stuck on average.",
         "inLanguage": "en",
-        "author": { "@id": "https://chadakeith.github.io/overcoming-average/#person" }
+        "author": { "@id": "https://chadakeith.github.io/overcoming-average/#person" },
+        "sameAs": [
+          "https://podcasts.apple.com/us/podcast/overcoming-average-podcast/id1490665155",
+          "https://open.spotify.com/show/0n0sDJLTZCkJVVAvZQI9kQ",
+          "https://www.youtube.com/channel/UCIS7JJtsV85zO1Rh3-hTfCw",
+          "http://feeds.libsyn.com/232190/rss"
+        ]
       },
       {
         "@type": "Person",
@@ -82,9 +87,8 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
-    <a class="wordmark" href="./">
-      <img class="wordmark-mark" src="assets/img/mark.svg" alt="" width="48" height="48">
-      <span class="wordmark-text">Overcoming <em>Average</em></span>
+    <a class="brand-logo" href="./">
+      <img src="assets/icons/nav-mark.png" alt="Overcoming Average" width="256" height="256">
     </a>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
       <span></span>
@@ -137,16 +141,22 @@
         <img src="assets/img/hero-horizon.jpg" srcset="assets/img/hero-horizon-800.jpg 800w, assets/img/hero-horizon.jpg 1280w" sizes="100vw" width="1280" height="720" alt="" loading="lazy" decoding="async">
       </div>
       <div class="band-inner">
-        <h2>Listen links coming</h2>
-        <p>Episodes live here and on the usual podcast apps. App links will sit on this site once they are ready.</p>
-        <a class="btn" href="episodes/">Episodes</a>
+        <h2>Listen</h2>
+        <p>Episodes live here and on the usual podcast apps.</p>
+        <div class="listen-links">
+          <a class="btn" href="https://podcasts.apple.com/us/podcast/overcoming-average-podcast/id1490665155" target="_blank" rel="noopener noreferrer">Apple Podcasts</a>
+          <a class="btn" href="https://open.spotify.com/show/0n0sDJLTZCkJVVAvZQI9kQ" target="_blank" rel="noopener noreferrer">Spotify</a>
+          <a class="btn" href="https://www.youtube.com/channel/UCIS7JJtsV85zO1Rh3-hTfCw" target="_blank" rel="noopener noreferrer">YouTube</a>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="footer-row">
-      <p class="footer-brand">Overcoming Average</p>
+      <a class="footer-logo" href="./">
+        <img src="assets/brand/overcoming-logo-square.jpg" alt="Overcoming Average" width="1500" height="1500">
+      </a>
       <ul class="footer-links">
         <li><a href="https://chadwickkeith.com">chadwickkeith.com</a></li>
         <li><a href="https://behindthemac.com">behindthemac.com</a></li>

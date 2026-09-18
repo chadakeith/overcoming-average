@@ -41,6 +41,7 @@
   --ink-dim: #a89f90;
   --gold: #c4a574;
   --gold-bright: #e8c990;
+  --burgundy: #70102e;
   --line: rgba(244, 239, 230, 0.1);
   --line-strong: rgba(244, 239, 230, 0.22);
   --shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
@@ -170,45 +171,21 @@ a:hover {
   border-bottom-color: transparent;
 }
 
-.wordmark {
+.brand-logo {
   display: inline-flex;
   align-items: center;
-  gap: 0.7rem;
-  text-decoration: none;
   z-index: 2;
+  text-decoration: none;
 }
 
-.wordmark:hover {
-  color: var(--ink);
+.brand-logo img {
+  height: 2.7rem;
+  width: auto;
+  border-radius: 0.28rem;
 }
 
-.wordmark-mark {
-  width: 1.45rem;
-  height: 1.45rem;
-  flex: 0 0 auto;
-}
-
-.wordmark-text {
-  font-family: var(--serif);
-  font-size: 1.18rem;
-  letter-spacing: -0.02em;
-  line-height: 1;
-}
-
-.wordmark-text em {
-  font-style: italic;
-  font-weight: 400;
-  position: relative;
-}
-
-.wordmark-text em::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 58%;
-  height: 1px;
-  background: var(--gold);
+.brand-logo:hover {
+  opacity: 0.9;
 }
 
 .nav-toggle {
@@ -564,6 +541,21 @@ a:hover {
   color: var(--gold-bright);
 }
 
+.listen-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.band .listen-links {
+  margin-top: 0.15rem;
+}
+
+.archive-ready .listen-links {
+  justify-content: center;
+  margin-top: 1.55rem;
+}
+
 .archive {
   max-width: var(--max);
   margin: 0 auto;
@@ -580,9 +572,10 @@ a:hover {
 }
 
 .archive-mark {
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 5.25rem;
+  height: 5.25rem;
   margin-bottom: 1.4rem;
+  border-radius: 0.35rem;
 }
 
 .empty-kicker {
@@ -689,6 +682,14 @@ a:hover {
   color: var(--gold);
 }
 
+.episode-card-listen.listen-links {
+  margin-top: 0.35rem;
+}
+
+.episode-card-listen.listen-links a {
+  text-decoration: none;
+}
+
 .about-frame {
   max-width: var(--max);
   margin: 0 auto;
@@ -703,9 +704,10 @@ a:hover {
 }
 
 .about-mark {
-  width: 2.6rem;
-  height: 2.6rem;
+  width: 5.25rem;
+  height: 5.25rem;
   margin-bottom: 1.3rem;
+  border-radius: 0.35rem;
 }
 
 .about-identity .hero-rule {
@@ -723,14 +725,23 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   gap: 1.5rem 2rem;
 }
 
-.footer-brand {
-  margin: 0;
-  font-family: var(--serif);
-  font-size: 1.15rem;
+.footer-logo {
+  display: inline-flex;
+  text-decoration: none;
+}
+
+.footer-logo img {
+  height: 3.35rem;
+  width: auto;
+  border-radius: 0.28rem;
+}
+
+.footer-logo:hover {
+  opacity: 0.9;
 }
 
 .footer-links,

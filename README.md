@@ -12,13 +12,15 @@ Podcast and personal brand site for Chad Keith. Live on GitHub Pages from `main`
 - Episodes
 - About
 
-No FAQ, team, privacy, or terms stubs. No invented Apple / Spotify / feed URLs. Listen links stay as "Listen links coming" until real URLs exist.
+No FAQ, team, privacy, or terms stubs. Listen buttons on Home and Episodes use the verified Apple Podcasts, Spotify, and YouTube show URLs. Do not invent other platforms.
 
 Canonical, Open Graph, sitemap, and robots stay on `https://chadakeith.github.io/overcoming-average/` until the domain cutover. See `CNAME.example` for the later custom-domain file. Do not add a live `CNAME` or change Cloudflare / registrar DNS from this repo.
 
 ## Adding an episode later
 
-The Episodes page is a ready archive, not a stub. When a real episode exists, add an `<ol class="episode-list">` above `.archive-ready` in `episodes/index.html` and hide or remove the ready panel. Card markup lives in `#episode-card-template`. Keep listen links as "Listen links coming" until the real app URLs exist. Do not invent Apple, Spotify, or feed URLs.
+The Episodes page is a ready archive, not a stub. When a real episode exists, add an `<ol class="episode-list">` above `.archive-ready` in `episodes/index.html` and hide or remove the ready panel. Card markup lives in `#episode-card-template`. Show-level listen buttons stay Apple Podcasts, Spotify, and YouTube until episode-specific URLs exist.
+
+Brand lockups live in `assets/brand/`. Header and favicon use the no-text Sisyphus mark. Footer and page marks use the square lockup. Do not put "Overcoming Average" text beside a wordmark logo.
 
 ## Local preview
 
