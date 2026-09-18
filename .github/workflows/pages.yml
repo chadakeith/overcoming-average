@@ -31,7 +31,7 @@ jobs:
         run: |
           mkdir -p _site
           cp -a 404.html index.html robots.txt site.webmanifest sitemap.xml README.md .nojekyll _site/
-          cp -a about episodes assets _site/
+          cp -a about episodes assets data _site/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

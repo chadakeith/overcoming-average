@@ -18,7 +18,15 @@ Canonical, Open Graph, sitemap, and robots stay on `https://chadakeith.github.io
 
 ## Adding an episode later
 
-The Episodes page is a ready archive, not a stub. When a real episode exists, add an `<ol class="episode-list">` above `.archive-ready` in `episodes/index.html` and hide or remove the ready panel. Card markup lives in `#episode-card-template`. Show-level listen buttons stay Apple Podcasts, Spotify, and YouTube until episode-specific URLs exist.
+Episode cards are generated from `data/episodes.json` and rendered as static HTML on `episodes/index.html` (Home also shows the three most recent YouTube episodes). Add the new entry to the JSON, then add a matching card on the Episodes page:
+
+- `person` is the prominent name on the card
+- `title` is secondary when it differs from `person`
+- If `youtubeId` is set, use the YouTube `hqdefault` thumbnail and that video URL
+- If there is no specific video, keep the card, use the Libsyn artwork, and point Watch on YouTube to `https://www.youtube.com/channel/UCIS7JJtsV85zO1Rh3-hTfCw`
+- Add a Listen link when `libsyn` is present
+
+Show-level listen buttons stay Apple Podcasts, Spotify, and YouTube.
 
 Brand lockups live in `assets/brand/`. Header and favicon use the no-text Sisyphus mark. Footer and page marks use the square lockup. Do not put "Overcoming Average" text beside a wordmark logo.
 
