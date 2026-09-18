@@ -2,43 +2,82 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>About | Overcoming Average</title>
   <meta name="description" content="Chad Keith hosts Overcoming Average, a podcast from Davidson / Charlotte. Long conversations about business, faith, family, and tech.">
   <link rel="canonical" href="https://chadakeith.github.io/overcoming-average/about/">
   <meta name="robots" content="index,follow">
   <meta name="author" content="Chad Keith">
   <meta name="theme-color" content="#070706">
-  <meta property="og:type" content="website">
+  <meta name="apple-mobile-web-app-title" content="Overcoming Average">
+  <meta property="og:type" content="profile">
+  <meta property="og:locale" content="en_US">
   <meta property="og:site_name" content="Overcoming Average">
   <meta property="og:title" content="About | Overcoming Average">
   <meta property="og:description" content="Chad Keith hosts Overcoming Average, a podcast from Davidson / Charlotte. Long conversations about business, faith, family, and tech.">
   <meta property="og:url" content="https://chadakeith.github.io/overcoming-average/about/">
-  <meta property="og:image" content="https://chadakeith.github.io/overcoming-average/assets/img/og-card.png">
+  <meta property="og:image" content="https://chadakeith.github.io/overcoming-average/assets/img/og-card.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="Overcoming Average, a podcast from Chad Keith">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="About | Overcoming Average">
   <meta name="twitter:description" content="Chad Keith hosts Overcoming Average, a podcast from Davidson / Charlotte. Long conversations about business, faith, family, and tech.">
-  <meta name="twitter:image" content="https://chadakeith.github.io/overcoming-average/assets/img/og-card.png">
+  <meta name="twitter:image" content="https://chadakeith.github.io/overcoming-average/assets/img/og-card.jpg">
+  <meta name="twitter:image:alt" content="Overcoming Average, a podcast from Chad Keith">
   <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png">
+  <link rel="icon" href="../assets/icons/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png" sizes="180x180">
   <link rel="manifest" href="../site.webmanifest">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="author" href="https://chadwickkeith.com">
+  <link rel="preload" as="font" href="../assets/fonts/instrument-serif-latin-400-normal.woff2" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../assets/css/site.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Chad Keith",
-    "url": "https://chadwickkeith.com",
-    "jobTitle": "Host",
-    "worksFor": {
-      "@type": "PodcastSeries",
-      "name": "Overcoming Average",
-      "url": "https://chadakeith.github.io/overcoming-average/"
-    }
+    "@graph": [
+      {
+        "@type": "AboutPage",
+        "name": "About | Overcoming Average",
+        "url": "https://chadakeith.github.io/overcoming-average/about/",
+        "description": "Chad Keith hosts Overcoming Average, a podcast from Davidson / Charlotte. Long conversations about business, faith, family, and tech.",
+        "mainEntity": { "@id": "https://chadakeith.github.io/overcoming-average/#person" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://chadakeith.github.io/overcoming-average/#person",
+        "name": "Chad Keith",
+        "url": "https://chadwickkeith.com",
+        "jobTitle": "Host",
+        "worksFor": {
+          "@type": "PodcastSeries",
+          "name": "Overcoming Average",
+          "url": "https://chadakeith.github.io/overcoming-average/"
+        },
+        "sameAs": [
+          "https://chadwickkeith.com",
+          "https://behindthemac.com"
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://chadakeith.github.io/overcoming-average/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "About",
+            "item": "https://chadakeith.github.io/overcoming-average/about/"
+          }
+        ]
+      }
+    ]
   }
   </script>
 </head>
@@ -46,7 +85,7 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <a class="wordmark" href="../">
-      <img class="wordmark-mark" src="../assets/img/mark.svg" alt="">
+      <img class="wordmark-mark" src="../assets/img/mark.svg" alt="" width="48" height="48">
       <span class="wordmark-text">Overcoming <em>Average</em></span>
     </a>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
@@ -63,13 +102,24 @@
 
   <main id="main">
     <header class="page-hero">
-      <h1>About</h1>
-      <p>Chad Keith. Davidson / Charlotte.</p>
+      <div class="page-hero-media" aria-hidden="true">
+        <img src="../assets/img/hero-horizon.jpg" srcset="../assets/img/hero-horizon-800.jpg 800w, ../assets/img/hero-horizon.jpg 1280w" sizes="100vw" width="1280" height="720" alt="" loading="eager" decoding="async">
+      </div>
+      <div>
+        <h1>About</h1>
+        <p>Chad Keith. Davidson / Charlotte.</p>
+      </div>
     </header>
     <section class="section">
-      <div class="section-narrow lede">
-        <p>I'm Chad Keith. Overcoming Average started as a podcast out of Davidson / Charlotte - long conversations with people who built something, rebuilt after a hard season, or just decided average wasn't the plan.</p>
-        <p>Episodes live here and on the usual podcast apps. Guests talk business, faith, family, tech, and the messy middle of figuring life out. No scripted hype. Just real stories and the odd rabbit hole.</p>
+      <div class="about-frame">
+        <aside class="about-identity" aria-hidden="true">
+          <img class="about-mark" src="../assets/img/mark.svg" alt="" width="48" height="48">
+          <hr class="hero-rule">
+        </aside>
+        <div class="lede">
+          <p>I'm Chad Keith. Overcoming Average started as a podcast out of Davidson / Charlotte - long conversations with people who built something, rebuilt after a hard season, or just decided average wasn't the plan.</p>
+          <p>Episodes live here and on the usual podcast apps. Guests talk business, faith, family, tech, and the messy middle of figuring life out. No scripted hype. Just real stories and the odd rabbit hole.</p>
+        </div>
       </div>
     </section>
   </main>
