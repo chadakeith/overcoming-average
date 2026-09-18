@@ -24,7 +24,15 @@ Open http://127.0.0.1:8080/
 
 ## GitHub Pages
 
-Source: branch `main`, folder `/`. A `.nojekyll` file is in the root so Pages serves the files as-is.
+The site is on `main`. `.github/workflows/pages.yml` deploys it with GitHub Actions.
+
+This agent can push code but cannot create the Pages site (GitHub blocks that admin API for the integration token). One click from you:
+
+1. Open [Settings → Pages](https://github.com/chadakeith/overcoming-average/settings/pages)
+2. Build and deployment → Source → **GitHub Actions**
+3. Actions → **Deploy Pages** → Run workflow (or push any commit to `main`)
+
+Preview URL after that: https://chadakeith.github.io/overcoming-average/
 
 `CNAME.example` is a reminder only. There is no live `CNAME` file, so github.io stays the preview host until the domain cutover.
 

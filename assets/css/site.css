@@ -114,12 +114,16 @@ a:hover {
   border-bottom: 1px solid transparent;
 }
 
-.site-header.is-scrolled,
-.site-header.is-open {
+.site-header.is-scrolled {
   background: rgba(7, 7, 6, 0.78);
   border-bottom-color: var(--line);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
+}
+
+.site-header.is-open {
+  background: transparent;
+  border-bottom-color: transparent;
 }
 
 .wordmark {
@@ -273,11 +277,12 @@ a:hover {
 }
 
 .hero-copy {
-  max-width: 18ch;
+  max-width: min(40rem, 100%);
 }
 
 .hero h1 {
   margin: 0 0 0.7rem;
+  max-width: 8ch;
   font-family: var(--serif);
   font-weight: 400;
   font-size: clamp(3.4rem, 11vw, 7.6rem);
@@ -287,7 +292,7 @@ a:hover {
 
 .hero-line {
   margin: 0;
-  max-width: 16ch;
+  max-width: 18rem;
   font-family: var(--serif);
   font-style: italic;
   font-size: clamp(1.35rem, 2.6vw, 2rem);
@@ -520,9 +525,10 @@ a:hover {
   .site-nav {
     position: fixed;
     inset: 0;
+    z-index: 1;
     display: grid;
     place-items: center;
-    background: rgba(7, 7, 6, 0.96);
+    background: #070706;
     opacity: 0;
     pointer-events: none;
     transition: opacity 220ms ease;
