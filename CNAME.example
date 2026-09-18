@@ -1,0 +1,4 @@
+# Activate only at DNS cutover. Do not rename this file to CNAME
+# until Cloudflare apex + www already point at GitHub Pages.
+#
+# overcomingaverage.net

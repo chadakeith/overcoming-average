@@ -1,0 +1,22 @@
+{
+  "name": "Overcoming Average",
+  "short_name": "Overcoming Average",
+  "description": "Chad Keith's podcast and personal brand. Stories from people who refuse to stay stuck on average.",
+  "start_url": "/overcoming-average/",
+  "scope": "/overcoming-average/",
+  "display": "standalone",
+  "background_color": "#070706",
+  "theme_color": "#070706",
+  "icons": [
+    {
+      "src": "/overcoming-average/assets/icons/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any"
+    },
+    {
+      "src": "/overcoming-average/assets/icons/apple-touch-icon.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
