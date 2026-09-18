@@ -14,6 +14,12 @@ Podcast and personal brand site for Chad Keith. Live on GitHub Pages from `main`
 
 No FAQ, team, privacy, or terms stubs. No invented Apple / Spotify / feed URLs. Listen links stay as "Listen links coming" until real URLs exist.
 
+Canonical, Open Graph, sitemap, and robots stay on `https://chadakeith.github.io/overcoming-average/` until the domain cutover. See `CNAME.example` for the later custom-domain file. Do not add a live `CNAME` or change Cloudflare / registrar DNS from this repo.
+
+## Adding an episode later
+
+The Episodes page is a ready archive, not a stub. When a real episode exists, add an `<ol class="episode-list">` above `.archive-ready` in `episodes/index.html` and hide or remove the ready panel. Card markup lives in `#episode-card-template`. Keep listen links as "Listen links coming" until the real app URLs exist. Do not invent Apple, Spotify, or feed URLs.
+
 ## Local preview
 
 ```bash

@@ -11,12 +11,20 @@
     {
       "src": "/overcoming-average/assets/icons/favicon.svg",
       "type": "image/svg+xml",
-      "sizes": "any"
+      "sizes": "any",
+      "purpose": "any"
     },
     {
-      "src": "/overcoming-average/assets/icons/apple-touch-icon.png",
+      "src": "/overcoming-average/assets/icons/icon-192.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "/overcoming-average/assets/icons/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
     }
   ]
 }
